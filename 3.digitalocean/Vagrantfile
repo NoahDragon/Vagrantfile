@@ -92,13 +92,4 @@ Vagrant.configure("2") do |config|
      config.vm.provision :shell, inline: "touch .hushlogin"
      config.vm.provision :shell, inline: "hostnamectl set-hostname #{hostname} && locale-gen #{locale}"
      config.vm.provision :shell, inline: "apt-get update --fix-missing"
-
-     # IPSEC VPN Installation
-	 # From https://github.com/hwdsl2/setup-ipsec-vpn
-	 config.vm.provision "shell", inline: <<-SHELL
-		 wget -q https://git.io/vpnsetup -O vpnsetup.sh && sudo \
-		 VPN_IPSEC_PSK='#{YOUR_IPSEC_PSK}' \
-		 VPN_USER='#{YOUR_USERNAME}' \
-		 VPN_PASSWORD='#{YOUR_PASSWORD}' sh vpnsetup.sh
-	 SHELL
 end

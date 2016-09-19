@@ -15,3 +15,11 @@ Create L2TP/IPSEC VPN on virtualbox (Haven't tested yet)
 **2.1.DigitalOcean_VPN**
 
 Based on 2.ipsec-vpn, instead of creating on virtual box, now create VPN on Digital Ocean Droplet. (Tested and working)
+
+**3.digitalocean**
+
+Simply create a digital ocean droplet via Vagrant.
+
+**4.hexo**
+
+![Hexo](http://hexo.io) (static website generator) environment.
