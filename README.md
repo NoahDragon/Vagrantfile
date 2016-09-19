@@ -8,6 +8,10 @@ Base Installed: g++ make git curl vim zsh
 
 Based on Ubuntu 14.04 LTS, installed the oh-my-zsh, and set default shell to zsh.
 
+**1.1.hexo**
+
+Hexo environment with my favorite zsh.
+
 **2.ipsec-vpn**
 
 Create L2TP/IPSEC VPN on virtualbox (Haven't tested yet)
